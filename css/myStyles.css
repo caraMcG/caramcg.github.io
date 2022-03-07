@@ -1,0 +1,688 @@
+@charset "utf-8";
+/* CSS */
+
+html,body{
+	
+	font-family:'Calibri Light',Calibri, sans-serif;
+	height:105%;
+	margin:0;
+	scroll-behavior: smooth;
+}
+
+/* SLIDES */
+.slide {
+	/* Full height */
+	height: 105%;
+	/* min-height:100%; */
+	width: 100%;
+	margin-top:0;
+	left:0;
+	overflow:hidden;
+	position: relative;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slideTitle{
+	text-align:center;
+	padding-top: 5%;
+}
+
+#skills_wrap .slideTitle{
+	padding-top:0;
+}
+
+.slideTitle h1{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #ffffff;
+	font-weight: bolder;
+    font-size: 95px;
+	text-shadow: 3px 3px 1px rgb(29,29,29);
+}
+.slideTitle p{
+	color:#f0874e;
+	font-family:'Calibri Light',Calibri, sans-serif;
+	font-size: 20px;
+	font-weight:800;
+	line-height: 0em;
+}
+
+.hidden{
+	visibility: hidden;
+	font-size: 0px;
+}
+
+/* Small Devices------------------*/
+@media screen and (max-width:767.98px){
+	.slideTitle{
+		text-align:center;
+		/* padding-top: 5%; */
+	}
+	.slideTitle h1{
+		font-family: 'Roboto Condensed', sans-serif;
+		color: #ffffff;
+		font-weight: bolder;
+		font-size: 70px;
+		/* text-shadow: 3px 3px 3px rgb(29,29,29); */
+	}
+}
+/* X Small Devices ------------------*/
+@media screen and (max-width:575.98px){
+	.slideTitle{
+		text-align:center;
+		padding-top: 0;
+	}
+	.slideTitle h1{
+		font-family: 'Roboto Condensed', sans-serif;
+		color: #ffffff;
+		font-weight: bolder;
+		font-size: 50px;
+		/* text-shadow: 3px 3px 3px rgb(29,29,29); */
+	}
+
+}
+/* XX Small Devices ------------------*/
+@media screen and (max-width:375.98px){
+	.slideTitle{
+		text-align:center;
+		padding-top: 0;
+	}
+	.slideTitle h1{
+		font-family: 'Roboto Condensed', sans-serif;
+		color: #ffffff;
+		font-weight: bolder;
+		font-size: 50px;
+		/* text-shadow: 3px 3px 3px rgb(29,29,29); */
+	}
+	
+}
+
+
+/*****************HOME SLIDE*********************/
+#home_anchor{
+		background-image: url('../img/img_erik-mclean.jpg');
+	}
+
+#title{
+	position: absolute;
+    left: 0;
+	margin-left:5%;
+	margin-top: 32%;
+    text-align: left;
+	color: #ffffff;
+	font-weight: bolder;
+    font-size: 100px;
+	line-height: 90%;
+	text-shadow: 3px 3px 3px rgb(29,29,29);
+}
+
+
+/* Large Devices --------------------*/
+@media screen and (max-width:1200px){
+	#title{
+		font-size: 90px;
+		margin-top:50%;
+	}
+}
+/* Medium Devices --------------------*/
+@media screen and (max-width:991.98px){
+	#title{
+		margin-top:55%;
+	}
+}
+/* Small Devices------------------*/
+@media screen and (max-width:767.98px){
+	#title{
+		font-size:80px;
+		margin-top:75%;
+	}
+}
+/* X Small Devices------------------*/
+@media screen and (max-width:575.98px){
+#title{
+	font-size: 50px;
+	margin-left:0;
+	text-align: center;
+	}
+}
+
+
+/*****************ABOUT ME SLIDE*********************/
+hr{
+	margin: auto;
+	height: 2px !important;
+}
+
+#about_anchor{	
+	background-color: rgba(46,49,54);
+	/* rgba(33,32,34) */
+	color: #ffffff;
+}
+
+#about_para{
+	font-size: 22px;
+	margin-top: 20%;
+	text-align-last:center;
+	font-family:'Calibri Light',Calibri, sans-serif;
+}
+
+	#about_para p{
+		text-align: justify;
+	}
+
+	#about_para h1{
+		margin-top:0; 
+		text-align-last:left;
+		font-size: 70px;
+	}
+
+#about_pic{
+	float:left;
+	vertical-align:top;
+	margin-top: 15%;
+	width:70%;
+	text-align-last:center;
+}
+
+	#about_pic img{
+		width:100%;
+		border-radius: 50%;
+		box-shadow: 10px 15px 15px rgba(37, 35, 38,1); 
+	}
+
+	#downArrow{
+		cursor:pointer;
+		width: 70px;
+		height: auto;
+	}
+
+
+
+/* Large Devices --------------------*/
+@media screen and (max-width:1200px){
+	#about_para{
+		font-size: 20px;
+		}
+	#about_para h1{
+		font-size: 60px;
+		text-align:left;
+	}
+	#about_pic{
+		float:none;
+		margin: 0 auto;
+		margin-top: 20%;
+	}
+}
+/* Medium Devices --------------------*/
+@media screen and (max-width:991.98px){
+	#about_para{
+		font-size: 20px;
+		text-align: center;
+		}
+	#about_para h1{
+		font-size: 45px;
+	}
+	#about_pic{
+		float:none;
+		margin: 0 auto;
+		margin-top: 20%;
+	}
+	#downArrow{
+		width:55px;
+		}
+	hr{
+		width:100%;
+	}
+}
+/* Small Devices------------------*/
+@media screen and (max-width:767.98px){
+	#about_para{
+		font-size: 20px;
+		margin-top:10%;
+		text-align: center;
+		}
+	#about_para h1{
+		font-size: 40px;
+		text-align-last:center;
+	}
+	#about_pic{
+		float:none;
+		margin: 0 auto;
+		margin-top: 20%;
+	}
+	#downArrow{
+		width:40px;
+		}
+	hr{
+		width:100%;
+	}
+}
+/* X Small Devices ------------------*/
+@media screen and (max-width:575.98px){
+	#about_para{
+		font-size: 15px;
+		}
+	#about_para h1{
+		text-align: center;
+	}
+	#about_pic{
+		float:none;
+		width:40%;
+		margin-top:5%;
+	}
+	#downArrow{
+		width:40px;
+	}
+}
+
+/*****************PROJECTS SLIDE*********************/
+
+#projects_anchor{
+	/* The laptop code image*/
+	/* background-image: url('../img/img_emile-perron.jpg'); */
+	background-image: url('../img/img_emile-perron2.png');
+}
+
+/* #overlay1{
+	position: absolute;
+	width: 100%;
+	height: 100%; 
+	left: 0;
+	right:0;
+	background: 
+		linear-gradient(
+		rgba(82, 108, 119, 0.8),
+		rgba(129,71,36,0.8)
+		);
+} */
+
+#projects_block{
+	margin: 8% auto;
+	width: 100%;
+}
+
+.project_info{
+	width: 400px;
+	/* margin-bottom: 10%; */
+	font-size: 15px;
+	font-weight: 500;
+	text-align:center;
+	background-color: #dad5d578;
+	/* background-color: #dad5d538; */
+    /* border-radius: 25px; */
+    padding: 15px;
+}
+
+.project_info p{
+	padding-bottom: 20px;
+}
+.mdlbtn{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right:0;
+	margin-left:0 !important;
+	margin-right:0 !important;
+	background-color: rgb(179, 179, 179);
+	height:10%;
+	cursor: pointer;
+}
+.col-6:first-child{
+	border-right: solid 1px rgba(33,32,34);
+}
+.col-6 .mdltxt-1, .col-6 .mdltxt-2{
+	color: rgba(33,32,34);
+	text-decoration: none;
+	font-size:17px;
+	font-weight:bold;
+}
+
+.col-6:hover a.mdltxt-1 span, .col-6:hover a.mdltxt-2 span{
+	display:none;
+}
+.col-6:hover a.mdltxt-1:after {
+	color: #2098D1;
+	content: "Preview!"; 
+}
+.col-6:hover a.mdltxt-2:after {
+	color: #2098D1;
+	font-family: "Font Awesome 5 Free";
+	font-size: 1.5rem;
+	content: "\f121"; 
+}
+/**MODAL**/
+.modal-open{
+	overflow:hidden;
+	overflow-y:scroll!important;
+	padding-right:0 !important;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: static !important;
+    margin-top: 20px !important;
+    width: 50% !important;
+}
+/* Large Devices --------------------*/
+@media screen and (max-width:1180px){
+	.project_info{
+		margin-bottom:5%;
+	}
+	#projects_block{
+		margin:4% auto;
+	}
+	/* #projects_anchor{
+		height:130%;
+	} */
+}
+/* Medium Devices --------------------*/
+@media screen and (max-width:991.98px){
+	#projects_anchor{
+		height:160%;
+	}
+	#projects_block{
+		margin:4% auto;
+	}
+	.project_info{
+		width:100%;
+		margin-bottom:5%;
+	}
+	.project_info p{
+		/* display:none; */
+		margin-bottom:10%;
+	}
+	.mdlbtn{
+		height:15%;
+	}
+}
+/* Small Devices------------------*/
+@media screen and (max-width:767.98px){
+	#projects_anchor{
+		height:160%;
+	}
+	#projects_block{
+		margin:4% auto;
+	}
+	.project_info{
+		width:100%;
+		margin-bottom:5%;
+	}
+	.project_info p{
+		/* display:none; */
+		margin-bottom:20%;
+	}
+	.mdlbtn{
+		height:15%;
+	}
+}
+/* X Small Devices ------------------*/
+@media screen and (max-width:575.98px){
+	#projects_anchor{
+		height:110%;
+	}
+	#projects_block{
+		margin:4% auto;
+	}
+	.project_info{
+		width:100%;
+		margin-bottom:1%;
+	}
+	.project_info p{
+		display:none;
+	}
+	ul.hidden{
+		visibility: visible;
+		font-size:15px;
+		padding-bottom:20px;
+		display: inline-block;
+	}	
+	.mdlbtn{
+		height:20%;
+	}
+	#projects_anchor h1{
+		font-size:50px;
+		padding-top: 0px;
+	}
+}
+/* XX Small Devices ------------------*/
+@media screen and (max-width:375.98px){
+	#projects_anchor{
+		height:140%;
+	}
+	#projects_block{
+		margin:4% auto;
+	}
+	.project_info{
+		width:100%;
+		margin-bottom:2%;
+	}
+	.project_info p{
+		display:none;
+	}
+	ul.hidden{
+		visibility: visible;
+		font-size:15px;
+		padding-bottom:20px;
+		display: inline-block;
+	}	
+	.mdlbtn{
+		height:20%;
+	}
+}
+
+/*****************SKILLS SLIDE*********************/
+.skills_icon{
+	text-align:center;
+}
+
+#skills_anchor{
+	background-color: #f0874e;
+	height: 50%;
+	font-family:'Calibri Light',Calibri, sans-serif;
+}
+.fa-brands, .fa-solid{
+	font-size: 7em !important;
+}
+
+#skills_wrap{
+	position:absolute;
+	/* margin:4% auto; */
+}
+/* Large Devices --------------------*/
+@media screen and (max-width:1180px){
+	.fa-brands, .fa-solid{
+		font-size:6em !important;
+	}
+}
+/* Medium Devices --------------------*/
+@media screen and (max-width:991.98px){
+	.fa-brands, .fa-solid{
+		font-size:6em !important;
+	}
+}
+/* Small Devices------------------*/
+@media screen and (max-width:767.98px){
+	.fa-brands, .fa-solid{
+		font-size:6em !important;
+	}
+}
+/* X Small Devices ------------------*/
+@media screen and (max-width:575.98px){
+	.fa-brands, .fa-solid{
+		font-size:6em !important;
+	}
+	#skills_anchor{
+		height:45%;
+	}
+	.skills_icon h3{
+		display:none;
+	}
+}
+/* XX Small Devices ------------------*/
+@media screen and (max-width:375.98px){
+	.fa-brands, .fa-solid{
+		font-size:4em !important;
+	}
+	.skills_icon h3{
+		display:none;
+	} 
+}
+
+/*****************CONTACT SLIDE*********************/
+#contact_anchor{
+	background-color: rgb(57,55,58);
+	height:95%;
+	color: #ffffff;
+}
+
+#contact_title{
+	font-size:50px;
+	font-family: 'Trirong', serif;
+	font-weight: bold;
+    font-size: 55px;
+	text-shadow: 3px 3px 3px rgb(29,29,29);
+}
+
+.btn-info{
+	background-color: #2098D1 !important;
+	border-color: #2098D1 !important;
+	color: white !important;
+}
+
+#contact_block{	
+	margin: 4% auto;
+	width: 40%;
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+	color: #2098D1;
+	background-color: rgba(33,32,34);
+	bottom: 0;
+	left: 0;
+	height: 20%;
+	width: 100%;
+}
+#cred{
+	width: 150px;
+    height: 100px;
+    margin-top: -100px;
+}
+/* Large Devices --------------------*/
+@media screen and (max-width:1250px){
+	#contact_block{	
+		margin: 10% auto;
+		width: 80%;
+	}
+}
+/* Medium Devices --------------------*/
+@media screen and (max-width:991.98px){
+	#contact_block{	
+		margin: 10% auto;
+		width: 90%;
+	}
+}
+/* Small Devices------------------*/
+@media screen and (max-width:767.98px){
+	#contact_block{	
+		margin: 10% auto;
+		width: 100%;
+	}
+}
+/* X Small Devices ------------------*/
+@media screen and (max-width:575.98px){
+
+	#contact_block{	
+		margin: 20% auto;
+		width: 100%;
+	}
+}
+/* XX Small Devices ------------------*/
+@media screen and (max-width:375.98px){
+	#contact_anchor{
+		height:150%;
+	}
+	#cred{
+		display:none;
+	}
+	footer {
+	height: 20%;
+	}
+}
+
+/*****************SIDEBAR*********************/
+
+/*menu */
+#testbar{
+	position:fixed;
+	z-index: 9999;
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - changes with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  /* background-color: #1f1d1eeb;  NOT SUPPORTED BY EDGE*/
+  background-color: rgb(31,29,30);
+  opacity: 0.95;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #acacac;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  /* color: #f1f1f1; */
+  color:white;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #1f1d1eeb; NOT SUPPORTED BY EDGE*/
+  background-color: rgb(31, 29, 30); 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.openbtn:focus {
+	outline: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#hamburger {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
